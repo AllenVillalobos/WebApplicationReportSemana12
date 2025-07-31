@@ -7,7 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace WebApplicationReport
+namespace WebApplicationReport.Paginas
 {
 
 
