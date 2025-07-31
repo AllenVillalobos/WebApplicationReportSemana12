@@ -1,0 +1,99 @@
+﻿/* estilos.css */
+
+/* Tipografía y fondo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor del formulario */
+form#form1 > div {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Estilo del GridView convertido en tabla */
+#gvPersonas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    /* Encabezados de columna */
+    #gvPersonas th,
+    #gvPersonas .header {
+        background-color: #005f7f;
+        color: #fff;
+        text-align: left;
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    /* Filas de datos */
+    #gvPersonas td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #e1e5ea;
+        font-size: 14px;
+    }
+
+    /* Filas alternadas */
+    #gvPersonas tr:nth-child(even) td {
+        background-color: #f9fafb;
+    }
+
+    /* Efecto hover sobre la fila */
+    #gvPersonas tr:hover td {
+        background-color: #e8f1f5;
+    }
+
+    /* Mensaje de “No hay Datos Cargados” */
+    #gvPersonas .empty-data {
+        text-align: center;
+        padding: 20px;
+        color: #777;
+        font-style: italic;
+    }
+
+/* Botón Generar Reporte */
+#btnGenerar {
+    display: inline-block;
+    background-color: #0084a2;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+    /* Hover del botón */
+    #btnGenerar:hover {
+        background-color: #006c85;
+    }
+
+/* Responsividad básica */
+@media (max-width: 600px) {
+    form#form1 > div {
+        padding: 20px;
+    }
+
+    #gvPersonas th, #gvPersonas td {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    #btnGenerar {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+}

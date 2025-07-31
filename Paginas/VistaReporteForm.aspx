@@ -5,12 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
     <title></title>
 </head>
 <body>
     <form id="form1" runat="server">
          <div>
-     <asp:GridView runat="server" ID="gvPersonas" AutoGenerateColumns="false" 
+     <asp:GridView CssClass="tablas" runat="server" ID="gvPersonas" AutoGenerateColumns="false" 
          EmptyDataText="No hay Datos Cargados"
          >
          <Columns>
@@ -20,7 +21,7 @@
          </Columns>
      </asp:GridView>
 
-     <asp:Button runat="server" ID="btnGenerar" Text="Generar Reporte" OnClick="btnGenerar_Click"/>
+     <asp:Button runat="server" ID="btnGenerar" Text="Generar Reporte" OnClick="btnGenerar_Click" CssClass="botones"/>
  </div>
     </form>
 </body>
